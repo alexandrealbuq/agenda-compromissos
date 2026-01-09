@@ -17,7 +17,7 @@ Aplicação front-end simples para gerenciamento de compromissos, desenvolvida c
 
 ## 💻 Demonstração
 🔗 Acesse o projeto online:  
-(link)
+(https://alexandrealbuq.github.io/agenda-compromissos/)
 
 ## 📚 Aprendizados
 - Manipulação do DOM
