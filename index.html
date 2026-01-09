@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda de Compromissos</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Agenda de Compromissos</h1>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <!-- Formulário -->
+    <section class="form-container">
+      <form id="form-compromisso">
+
+        <input 
+          type="text" 
+          id="titulo" 
+          placeholder="Digite seu compromisso..."
+          required
+        />
+
+        <input 
+          type="date" 
+          id="data"
+          required
+        />
+
+        <input 
+          type="time" 
+          id="hora"
+          required
+        />
+
+        <button type="submit">
+          Adicionar
+        </button>
+
+      </form>
+    </section>
+
+    <!-- Lista de compromissos -->
+    <section class="lista-container">
+      <h2>Meus Compromissos</h2>
+      <p id="empty-state">
+  📅 Nenhum compromisso cadastrado.<br>
+  Adicione seu primeiro compromisso acima.
+</p>
+
+      <ul id="lista-compromissos">
+        
+        <!-- Os compromissos vão aparecer aqui -->
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Cabeçalho */
+header {
+  width: 100%;
+  background: #4f46e5;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Formulário */
+.form-container {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+form input {
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #4338ca;
+}
+
+/* Lista */
+.lista-container {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.lista-container h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li.concluido span {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+li button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #dc2626;
+}
+#lista-compromissos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9ff;
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#lista-compromissos li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+
+
+.texto-compromisso {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.texto-compromisso strong {
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.texto-compromisso span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+#lista-compromissos button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: opacity 0.2s ease;
+}
+
+#lista-compromissos button:hover {
+  opacity: 0.85;
+}
+
+#lista-compromissos button:first-of-type {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+#lista-compromissos button:last-of-type {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+.concluido .texto-compromisso {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+
+li.concluido strong {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+form input,
+form button {
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 800px;
+  }
+
+  .form-container,
+  .lista-container {
+    margin-bottom: 24px;
+  }
+}
+#lista-compromissos li {
+  gap: 12px;
+}
+#empty-state {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+.form-container.editando {
+  border: 2px solid #6366f1;
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
+}
+.form-container.editando button {
+  background: #4f46e5;
+}
+
+
